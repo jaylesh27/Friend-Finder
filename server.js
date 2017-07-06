@@ -13,6 +13,14 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
+// The following two "app.gets" functionality will be used in htmlRoutes.js
+app.get("/", function(req, res){
+   res.sendFile(path.join(__dirname, "app/public/home.html"));
+});
+
+app.get("/survey", function(req, res) {
+  res.sendFile(path.join(__dirname, "app/public/survey.html"));
+});
 
 
 app.listen(PORT, function() {
