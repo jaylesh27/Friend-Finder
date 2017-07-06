@@ -22,31 +22,43 @@
 
 
 <div class = "container">
-	
 
-	<!-- Dropdown Trigger -->
-	<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-	<!-- Dropdown Structure -->
-	<ul id='dropdown1' class='dropdown-content'>
-	<li><a href="#!">1</a></li>
-	<li class="divider"></li>
-	<li><a href="#!">2</a></li>
-	<li class="divider"></li>
-	<li><a href="#!">3</a></li>
-	<li class="divider"></li>
-	<li><a href="#!">4</a></li>
-	<li class="divider"></li>
-	<li><a href="#!">5</a></li>
-	</ul>
-
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<input placeholder="Name (required)" id="user-name" type="text" class="validate">
+				<label for="user-name">Name</label>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "input-field col s12">
+				<input placeholder = "Picture (required)" type="text" id = "user-picture">
+				<label for = "user-picture">Picture</label>
+			</div>
+		</div>
+	</form>
 
 
+	<div class = "col s12" id = "survey-questions">
 
+		<!-- Dropdown Trigger -->
+		<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me</a>
+		<!-- Dropdown Structure -->
+		<ul id='dropdown1' class='dropdown-content'>
+		<li><a href="#!">1</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">2</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">3</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">4</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">5</a></li>
+		</ul>
 
+	</div>
 
 </div>
-
-
 
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
